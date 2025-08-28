@@ -9,6 +9,7 @@ import { TypeScriptIcon } from "~/components/icons/icons/typescript-icon";
 import { TailwindIcon } from "~/components/icons/icons/tailwind-icon";
 import { Zap, Shield, Database } from "lucide-react";
 import DeveloperSection from "./_components/developer-section";
+import Link from "next/link";
 
 export default async function HomePage() {
   return (
@@ -40,8 +41,21 @@ export default async function HomePage() {
             operations. Built with TypeScript and Tailwind CSS.
           </p>
 
-          <div className="flex flex-col justify-center gap-4 sm:flex-row">
-            <GitHubIcon className="h-10 w-10" />
+          <div className="mx-auto mt-4 flex max-w-2xl flex-col items-center justify-center gap-3">
+            <p className="text-white/60">
+              Clone it or start from this template to build your next app.
+            </p>
+            <div className="flex flex-col items-center gap-3 sm:flex-row">
+              <Link
+                href="https://github.com/facundomartinezvidal/next-trpc-drizzle-supabase"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-white transition-all hover:scale-[1.02] hover:border-white/30 hover:bg-white/15"
+              >
+                <GitHubIcon className="h-5 w-5 transition-transform group-hover:scale-110" />
+                <span>View Repository</span>
+              </Link>
+            </div>
           </div>
         </div>
 

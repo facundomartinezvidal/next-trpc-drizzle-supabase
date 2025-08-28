@@ -1,7 +1,7 @@
 {
   "name": "next-trpc-drizzle-supabase",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "scripts": {
     "build": "next build",
